@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+  
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+
+
+
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    
+
+}
+
+body{
+    font-family:"Rubik";
+    font-weight: 400;
+    font-size: 12px;
+    color:#616161;
+}
+
+/* ----------------------------------------------- */
+
+.wrapper{
+	overflow:hidden;
+	display:flex;
+	flex-direction: column;
+	min-height: 100%;  /* оболочка min ширина окна браузера */
+	
+}
+
+/* ----------------------------------------------- */
+
+[class*="__container"]{
+	/* max-width: 1057px; */
+	max-width: 1087px;
+	padding:0 15px;
+	margin:0 auto
+
+}
+/* PC */
+@media(max-width:1087px){
+	[class*="__container"]{
+		max-width: 970px;
+	}
+}
+
+/* TABLET */
+@media(max-width:991.98px){
+	[class*="__container"]{
+		max-width: 750px;
+	}
+}
+
+/* MOBILE */
+@media(max-width:767.98px){
+	[class*="__container"]{
+		max-width: none;
+	}
+}
+
+/* ----------------------------------------------- */
+
+.main{
+	flex:1 1 auto;/* расширение и прижатие футер к низу */
+}
+
+
+/* -----------------Header------------------------------ */
+
+
+
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.header__container {
+	display:flex;
+	min-height: 114px;
+	align-items:center;
+}
+.header__logo {
+}
+.header__menu {
+	flex:1 1 auto;
+}
+
+.header__button {
+	flex: 0 0 252px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media(max-width:991.98px){
+	.header__button{
+		flex: 0 0 150px;
+	}
+}
+
+
+
+
+
+.menu {	
+	display: flex;
+	justify-content: flex-end;
+	
+}
+.menu__list {
+	display: flex;
+	
+
+}
+.menu__item {
+	margin-right: 40px;
+	letter-spacing: 1px;
+}
+
+/* .menu__item:not(:last-child){
+	margin-right: 40px;
+} */
+.menu__link {
+	font-family:"Raleway";
+	font-weight: 700;
+	font-size: 10px;
+	text-transform: uppercase;
+	line-height: 1.2;
+	letter-spacing: 14%;
+	color:#000000;
+}
+
+.button {
+	display: inline-block ;
+	font-family:"Raleway";
+	text-transform: uppercase;
+	font-weight:800;
+	font-size:10px;
+	color:#FCFDFE;
+	
+	line-height: 1.2;
+	letter-spacing: 1px;
+	padding:14px 30px;
+	background-color:#EC5863;
+	border-radius: 5px;
+	transition: background-color 0.3s ease-in-out 0s;
+}
+
+.button:hover{
+	/* text-decoration: underline; */
+	background-color: #7dacf8;
+}
+
+.button_blue {
+	background-color: #4285F4;
+}
+
